@@ -17,10 +17,7 @@ class _MenuPageState extends State<MenuPage> {
       appBar: AppBar(
         backgroundColor: const Color(0xFFEFECE4),
         elevation: 0,
-        leading: const Icon(
-          Icons.menu,
-          color: Colors.blueAccent,
-        ),
+        leading: const Icon(Icons.menu, color: Colors.blueAccent),
         centerTitle: true,
         title: SizedBox(
           height: 90, // Adjust the height as needed
@@ -32,7 +29,6 @@ class _MenuPageState extends State<MenuPage> {
       ),
 
       //
-
       body: Column(
         children: [
           //banner
@@ -51,9 +47,7 @@ class _MenuPageState extends State<MenuPage> {
                   children: [
                     Text(
                       "im cooked this season",
-                      style: GoogleFonts.dmSerifDisplay(
-                        fontSize: 20,
-                      ),
+                      style: GoogleFonts.dmSerifDisplay(fontSize: 20),
                     ),
 
                     //button
@@ -77,16 +71,19 @@ class _MenuPageState extends State<MenuPage> {
             padding: const EdgeInsets.symmetric(horizontal: 25.0),
             child: TextField(
               decoration: InputDecoration(
-                  focusedBorder: OutlineInputBorder(
-                    borderSide:
-                        const BorderSide(color: Color.fromARGB(255, 7, 48, 2)),
-                    borderRadius: BorderRadius.circular(20),
+                focusedBorder: OutlineInputBorder(
+                  borderSide: const BorderSide(
+                    color: Color.fromARGB(255, 7, 48, 2),
                   ),
-                  enabledBorder: OutlineInputBorder(
-                    borderSide: const BorderSide(
-                        color: Color.fromARGB(255, 38, 34, 34)),
-                    borderRadius: BorderRadius.circular(20),
-                  )),
+                  borderRadius: BorderRadius.circular(20),
+                ),
+                enabledBorder: OutlineInputBorder(
+                  borderSide: const BorderSide(
+                    color: Color.fromARGB(255, 38, 34, 34),
+                  ),
+                  borderRadius: BorderRadius.circular(20),
+                ),
+              ),
             ),
           ),
           const SizedBox(height: 25),
@@ -97,9 +94,10 @@ class _MenuPageState extends State<MenuPage> {
             child: Text(
               'Food Menu',
               style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  color: Colors.blueGrey[800],
-                  fontSize: 18),
+                fontWeight: FontWeight.bold,
+                color: Colors.blueGrey[800],
+                fontSize: 18,
+              ),
             ),
           ),
 
